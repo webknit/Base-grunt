@@ -1,0 +1,44 @@
+/* - BASE HTML TEMPLATEs
+------------------------------------------------- 
+	Description: Mixins
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- MIXINS  .............................. 1.0.
+*/
+
+
+/*********************************************
+	- 1.0 -  MIXINS
+*********************************************/
+
+	@mixin border-radius($radius) {
+	  	-moz-border-radius: $radius;
+	  		-webkit-border-radius: $radius;
+	  			border-radius: $radius;
+	}
+	
+	@mixin border-box {
+		-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+				box-sizing: border-box;
+	}
+	
+	@mixin transition ($which, $speed, $method, $delay) {
+		-webkit-transition:$which $speed $method $delay;
+			-moz-transition: $which $speed $method $delay;
+				-o-transition: $which $speed $method $delay;
+						transition: $which $speed $method $delay;
+	}
+	
+	@mixin animation ($which, $speed, $method, $delay) {
+		-webkit-animation:$which $speed $method $delay;
+			-moz-animation: $which $speed $method $delay;
+				-o-animation: $which $speed $method $delay;
+						animation: $which $speed $method $delay;
+	}
